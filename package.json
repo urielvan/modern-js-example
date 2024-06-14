@@ -1,0 +1,50 @@
+{
+  "name": "modern-refresh",
+  "version": "0.1.0",
+  "scripts": {
+    "reset": "npx rimraf ./**/node_modules",
+    "dev": "modern dev",
+    "build": "modern build",
+    "start": "modern start",
+    "serve": "modern serve",
+    "new": "modern new",
+    "lint": "modern lint",
+    "prepare": "husky install",
+    "upgrade": "modern upgrade"
+  },
+  "engines": {
+    "node": ">=16.18.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": [
+      "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "dist/"
+  ],
+  "dependencies": {
+    "@modern-js/runtime": "2.53.0",
+    "antd": "~5.18.1",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0"
+  },
+  "devDependencies": {
+    "@modern-js-app/eslint-config": "2.53.0",
+    "@modern-js/app-tools": "2.53.0",
+    "@modern-js/eslint-config": "2.53.0",
+    "@modern-js/tsconfig": "2.53.0",
+    "@total-typescript/ts-reset": "~0.4.2",
+    "@types/lodash": "~4.14.194",
+    "@types/node": "~16.11.7",
+    "@types/react": "~18.3.3",
+    "@types/react-dom": "~18.3.0",
+    "@types/react-is": "~17.0.3",
+    "husky": "~8.0.1",
+    "lint-staged": "~13.1.0",
+    "prettier": "~2.8.1",
+    "rimraf": "~3.0.2",
+    "typescript": "~5.4.5"
+  }
+}

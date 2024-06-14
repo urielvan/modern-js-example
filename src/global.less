@@ -1,0 +1,99 @@
+:global {
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    position: relative;
+  }
+
+  .ant-layout {
+    min-height: 100vh;
+  }
+
+  // scrollbar
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    transition: all 0.4s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    transition: all 0.4s ease;
+  }
+
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .ant-message .msg-success {
+    .ant-message-notice-content {
+      background: #04C766;
+    }
+
+    .ant-message-success .anticon,
+    span {
+      color: #fff;
+    }
+  }
+
+  .ant-modal .ant-modal-title {
+    font-weight: 500;
+    color: #101015;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .anticon-info-circle {
+    color: #d0cdcd;
+    cursor: pointer;
+
+    &:hover {
+      color: #807f7f;
+    }
+  }
+
+  .ant-tooltip .ant-tooltip-inner {
+    background: #fff;
+    color: #3E3E47;
+  }
+
+  .ant-tooltip {
+    max-width: fit-content;
+  }
+
+  .ant-tooltip-arrow {
+    --antd-arrow-background-color: #fff;
+  }
+
+  .ag-header-center .ag-header-group-cell-label,
+  .ag-header-center .ag-header-cell-label {
+    text-align: center;
+    display: grid;
+  }
+
+  .cell-span {
+    background: white;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-bottom: 1px solid lightgrey !important;
+  }
+
+  .cell-radio {
+    text-overflow: unset !important;
+  }
+
+  .no-right-border {
+    border-right: none !important;
+    text-overflow: unset !important;
+  }
+}
